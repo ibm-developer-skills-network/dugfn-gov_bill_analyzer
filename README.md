@@ -52,19 +52,38 @@ By following these steps and utilizing the appropriate tools and models, you can
 
 # Researching Data Source
 
-The 2024 congressional spending bills, also known as appropriations bills, are divided into twelve categories that fund various parts of the federal government. Here is the list of the twelve appropriations bills for the fiscal year 2024:
+The FY 2024 appropriations bills in the U.S. Congress each have specific bill numbers. Here are the bill numbers for the first ten appropriations bills:
 
-1. **Agriculture, Rural Development, Food and Drug Administration, and Related Agencies**
-2. **Commerce, Justice, Science, and Related Agencies**
-3. **Defense**
-4. **Energy and Water Development, and Related Agencies**
-5. **Financial Services and General Government**
-6. **Homeland Security**
-7. **Interior, Environment, and Related Agencies**
-8. **Labor, Health and Human Services, Education, and Related Agencies**
-9. **Legislative Branch**
-10. **Military Construction, Veterans Affairs, and Related Agencies**
-11. **State, Foreign
-12. - model stopped answering here (ChatGPT)
+1. **Agriculture, Rural Development, Food and Drug Administration, and Related Agencies Appropriations Act, 2024**:
+   - **H.R. 4368**
+
+2. **Commerce, Justice, Science, and Related Agencies Appropriations Act, 2024**:
+   - **H.R. 4369**
+
+3. **Defense Appropriations Act, 2024**:
+   - **H.R. 4365**
+
+4. **Energy and Water Development and Related Agencies Appropriations Act, 2024**:
+   - **H.R. 4394**
+
+5. **Financial Services and General Government Appropriations Act, 2024**:
+   - **H.R. 4367**
+
+6. **Homeland Security Appropriations Act, 2024**:
+   - **H.R. 4366**
+
+7. **Interior, Environment, and Related Agencies Appropriations Act, 2024**:
+   - **H.R. 4821**
+
+8. **Labor, Health and Human Services, Education, and Related Agencies Appropriations Act, 2024**:
+   - **H.R. 4371**
+
+9. **Legislative Branch Appropriations Act, 2024**:
+   - **H.R. 4396**
+
+10. **Military Construction, Veterans Affairs, and Related Agencies Appropriations Act, 2024**:
+    - **H.R. 4366** (also listed as part of the Consolidated Appropriations Act, 2024)
+
+These bills cover
    
 
