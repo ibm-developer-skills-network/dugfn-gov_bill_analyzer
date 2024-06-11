@@ -8,9 +8,11 @@ import urllib
 import urllib.request
 from urllib.error import HTTPError, URLError
 
-URL = 'https://developer.nrel.gov/api/alt-fuel-stations/v1.json'
+import click
+
 opassword_vault = 'Personal'
 opassword_item = 'congress.gov api key'
+API = 'https://api.congress.gov/v3'
 
 
 def opass_get_vault_item_value(item, vault, label):
@@ -30,22 +32,40 @@ def opass_get_vault_item_value(item, vault, label):
     return df[df['label'] == label]['value'].values[0]
 
 
-api_key = opass_get_vault_item_value(item=opassword_item, vault=opassword_vault, label='api_key')
-parameters = urllib.parse.urlencode({'limit': 1, 'api_key': api_key})
 
-try:
-    URL = f'{URL}?{parameters}'
-    print(f'opening {URL}...')
-    with urllib.request.urlopen(URL) as response:
-        print(response.status)
-        print(response.read())
-        print(response)
-except HTTPError as error:
-    breakpoint()
-    print(error.status, error.reason)
-except URLError as error:
-    breakpoint()
-    print(error.reason)
-except TimeoutError:
-    breakpoint()
-    print("Request timed out")
+
+def get_api_results(URL):
+    try:
+        with urllib.request.urlopen(URL) as response:
+            return json.loads(response.read())
+    except HTTPError as error:
+        breakpoint()
+        print(error.status, error.reason)
+    except URLError as error:
+        breakpoint()
+        print(error.reason)
+    except TimeoutError:
+        breakpoint()
+        print("Request timed out")
+
+
+def bill_details(api_key, congress, bill_type, bill_number):
+    endpoint = 'bill'
+    auth_parameters = urllib.parse.urlencode({'limit': 1, 'api_key': api_key})
+    url = f'{API}/{endpoint}/{congress}/{bill_type}/{bill_number}?{auth_parameters}'
+    # address of the specific endpoint
+    return get_api_results(url)
+
+
+@click.command()
+@click.option("--congress-number", help="file with student data", required=True, type=str)
+@click.option("--bill-type", help="hr, ...", required=True, type=str)
+@click.option("--bill-number", help="bill number digits", required=True, type=int)
+def congress_bill_api(congress_number, bill_type, bill_number):
+    api_key = opass_get_vault_item_value(item=opassword_item, vault=opassword_vault, label='api_key')
+    result = bill_details(api_key, congress_number, bill_type, bill_number)
+    print(result)
+
+
+if __name__ == '__main__':
+    congress_bill_api()
