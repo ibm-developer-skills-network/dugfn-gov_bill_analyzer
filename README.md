@@ -84,6 +84,12 @@ The FY 2024 appropriations bills in the U.S. Congress each have specific bill nu
 10. **Military Construction, Veterans Affairs, and Related Agencies Appropriations Act, 2024**:
     - **H.R. 4366** (also listed as part of the Consolidated Appropriations Act, 2024)
 
-These bills cover
+
+# Project Work
+## Downloader for Bills - get bill number
+## Downloader for Bills - download using congress.gov API
+- sign up for API key
+
+
    
 
