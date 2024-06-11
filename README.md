@@ -50,3 +50,21 @@ By following these steps and utilizing the appropriate tools and models, you can
 1. curiosity
 
 
+# Researching Data Source
+
+The 2024 congressional spending bills, also known as appropriations bills, are divided into twelve categories that fund various parts of the federal government. Here is the list of the twelve appropriations bills for the fiscal year 2024:
+
+1. **Agriculture, Rural Development, Food and Drug Administration, and Related Agencies**
+2. **Commerce, Justice, Science, and Related Agencies**
+3. **Defense**
+4. **Energy and Water Development, and Related Agencies**
+5. **Financial Services and General Government**
+6. **Homeland Security**
+7. **Interior, Environment, and Related Agencies**
+8. **Labor, Health and Human Services, Education, and Related Agencies**
+9. **Legislative Branch**
+10. **Military Construction, Veterans Affairs, and Related Agencies**
+11. **State, Foreign
+12. - model stopped answering here (ChatGPT)
+   
+
